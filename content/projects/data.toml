@@ -1,7 +1,70 @@
 [[project]]
-name = "barreldb"
-description = "A disk based KV store (based on Bitcask implementation)"
+name = "ausis"
+description = "A Customized AI built & 3rd party data driven smart, real-time & personalized Underwriting Platform for Insurance."
 links = [
-  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/barreldb/" },
-  { name = "GitHub", url="https://github.com/abhimanyu-sikarwar/barreldb" },
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/ausis/" },
+]
+
+[[project]]
+name = "Wipro’s Intelligent Underwriter"
+description = "Driven by technology and the rising need for automated and data-driven processes, the insurance industry is at an inflection point. Insurance companies need to re-evaluate their underwriting process to secure a sustainable advantage in the coming years."
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/wipro-intelligent/" },
+]
+
+[[project]]
+name = "Insta Insurance"
+description = ""
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/insta-insurance/" },
+]
+
+[[project]]
+name = "Tambola Mobile App"
+developYear = "2019"
+description = ""
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/tambola/" },
+]
+
+[[project]]
+name = "Classroam"
+description = ""
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/classroam/" },
+]
+
+[[project]]
+name = "JAX"
+description = ""
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/jax/" },
+]
+
+[[project]]
+name = "ESG"
+description = ""
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/esg/" },
+]
+
+[[project]]
+name = "Ununusual Flow"
+description = ""
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/unusualflow/" },
+]
+
+[[project]]
+name = "Voter Search"
+description = ""
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/voter_search/" },
+]
+
+[[project]]
+name = "Geeta Shlok"
+description = ""
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/geeta_shlok/" },
 ]
