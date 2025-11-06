@@ -22,12 +22,12 @@ A browser extension that enables users to export their Claude AI conversations t
 ## Installation
 
 ### Chrome
-1. Download the extension from the Chrome Web Store
+1. Download the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/claude-to-markdown/hpmejedgaglmmbogjgmbphhdopeaglfe?authuser=0&hl=en)
 2. Click "Add to Chrome"
 3. Grant necessary permissions
 
 ### Firefox
-1. Download the extension from Firefox Add-ons
+1. Download the extension from [Firefox Add-ons](https://addons.mozilla.org/en-GB/firefox/addon/claude-export-to-markdown/)
 2. Click "Add to Firefox"
 3. Grant necessary permissions
 
