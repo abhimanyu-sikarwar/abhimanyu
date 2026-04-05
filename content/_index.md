@@ -8,16 +8,11 @@ title = "Home"
 
   <div class="home-content">
 
-I'm Abhimanyu — but you might stumble across `@asikarwar` in some corners of the internet. I work at [KODO](https://kodo.com/) where I focus mainly on Frontend engineering along with handling infrastructure and observability.
-<!-- 
-I like to [tinker](https://github.com/abhimanyu-sikarwar) with stuff around monitoring, networking and distributed systems.
+I'm Abhimanyu — but you might stumble across `@asikarwar` in some corners of the internet. I'm a Sr. Software Engineer & Team Lead at [Kodo](https://kodo.com/) with 7+ years of experience building scalable data systems, CI/CD pipelines, and visualization tools. I work across the stack — Svelte, TypeScript, React on the frontend; Python, Rust, Go on the backend — with a growing focus on AI/ML-driven optimization using LangChain, LangGraph, and agentic workflows.
 
-When I'm not in the tech zone, I'm probably playing badminton, on a road trip, or experimenting in the kitchen. I've got a soft spot for indie music too, and I've curated some of my favorites on [Spotify playlist](https://open.spotify.com/playlist/5dvbrw93FgUhsZdbnpF3JM). -->
+Previously, I led frontend engineering at [Artivatic Data Labs](https://artivatic.ai/) building AI-powered insurance platforms, and built full-stack products at Swipebucks across edtech and e-commerce.
 
   </div>
 
-  <div class="home-image">
-    <!-- <img src="/images/website/profile.png" alt="Profile Image" class="img-rounded" /> -->
-  </div>
 
 </div>

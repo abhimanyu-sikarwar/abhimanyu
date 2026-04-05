@@ -1,70 +1,68 @@
 [[project]]
-name = "ausis"
-description = "A Customized AI built & 3rd party data driven smart, real-time & personalized Underwriting Platform for Insurance."
+name = "AI Voice Lead Qualification Agent"
+description = "Agentic AI system that autonomously calls sales leads via Sarvam AI text-to-voice, conducts dynamic qualification conversations, and scores leads by interest level."
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/ai-voice-lead-qualification-agent/" },
+]
+
+[[project]]
+name = "AI Grocery Orchestration"
+description = "Multi-agent grocery ordering system using Model Context Protocol; user sets dietary preferences in ChatGPT/Claude, AI generates a personalized meal plan, then autonomously orders ingredients from nearby stores."
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/ai-grocery-orchestration/" },
+]
+
+[[project]]
+name = "BhashaSethu (Local Guide)"
+description = "A mobile-first PWA for live Hindi-to-Kannada voice translation using Sarvam AI, built for travellers navigating South India."
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/local-guide/" },
+  { name = "Website", url = "https://local-guide.abhimanyusikarwar.com/" },
+  { name = "GitHub", url = "https://github.com/abhimanyu-sikarwar/local-guide" },
+]
+
+[[project]]
+name = "Dart Score"
+description = "A mobile-first PWA for scoring X01 and Cricket dart games with an interactive dartboard and smart win detection."
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/dart-score/" },
+  { name = "Website", url = "https://dart.abhimanyusikarwar.com/" },
+  { name = "GitHub", url = "https://github.com/abhimanyu-sikarwar/dart-score" },
+]
+
+[[project]]
+name = "Unusual Flow"
+description = "Real-time options trading scanner with WebSocket integration for live market data streaming."
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/unusualflow/" },
+  { name = "Website", url = "https://unusualflow.com" },
+]
+
+[[project]]
+name = "Export Claude Chat to Markdown"
+description = "Browser extension to export Claude AI conversations in multiple formats: Markdown, Styled HTML, and PDF."
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/export-claude-chat-to-markdown/" },
+  { name = "GitHub", url = "https://github.com/abhimanyu-sikarwar/claude-extension" },
+]
+
+[[project]]
+name = "Geo IP Toolkit"
+description = "Open-source Go service that unifies IP geolocation data from multiple providers through a single API."
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/geo-ip-toolkit-unified-geolocation-api/" },
+]
+
+[[project]]
+name = "AUSIS"
+description = "AI-driven underwriting engine scoring insurance applications using multi-modal inputs — medical records, financial history, location-based fraud signals, and wearable health data."
 links = [
   { name = "Blog", url = "https://abhimanyusikarwar.com/posts/ausis/" },
 ]
 
 [[project]]
-name = "Wipro’s Intelligent Underwriter"
-description = "Driven by technology and the rising need for automated and data-driven processes, the insurance industry is at an inflection point. Insurance companies need to re-evaluate their underwriting process to secure a sustainable advantage in the coming years."
+name = "Wipro's Intelligent Underwriter"
+description = "Enterprise-grade AI underwriting platform serving 500+ users, surfacing ML model outputs for automated insurance underwriting decisions."
 links = [
   { name = "Blog", url = "https://abhimanyusikarwar.com/posts/wipro-intelligent/" },
-]
-
-[[project]]
-name = "Insta Insurance"
-description = ""
-links = [
-  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/insta-insurance/" },
-]
-
-[[project]]
-name = "Tambola Mobile App"
-developYear = "2019"
-description = ""
-links = [
-  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/tambola/" },
-]
-
-[[project]]
-name = "Classroam"
-description = ""
-links = [
-  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/classroam/" },
-]
-
-[[project]]
-name = "JAX"
-description = ""
-links = [
-  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/jax/" },
-]
-
-[[project]]
-name = "ESG"
-description = ""
-links = [
-  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/esg/" },
-]
-
-[[project]]
-name = "Ununusual Flow"
-description = ""
-links = [
-  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/unusualflow/" },
-]
-
-[[project]]
-name = "Voter Search"
-description = ""
-links = [
-  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/voter_search/" },
-]
-
-[[project]]
-name = "Geeta Shlok"
-description = ""
-links = [
-  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/geeta_shlok/" },
 ]
