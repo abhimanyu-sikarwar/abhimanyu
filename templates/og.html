@@ -10,7 +10,7 @@
 {% if page -%}
     {% set og_type = "article" -%}
     {% set og_title = page.title -%}
-    {% set og_description = page.description -%}
+    {% set og_description = page.description | default(value=config.description) -%}
     {% set og_url = config.base_url ~ page.permalink -%}
     {% set article_published_time = page.date -%}
     {% set article_modified_time = page.date -%}
@@ -22,6 +22,7 @@
 {% endif -%}
 
 <meta name="title" content="{% if page and page.title %}{{ page.title }}{% else %}{{ config.title }}{% endif %}">
+<meta name="description" content="{{ og_description }}">
 <meta property="og:site_name" content="{{ config.title }}">
 <meta property="og:type" content="{{ og_type }}">
 <meta property="og:title" content="{{ og_title }}">
@@ -52,7 +53,7 @@
     <meta name="twitter:image" content="{{ config.base_url ~ og_image }}">
 {% endif -%}
 
-<meta name="twitter:site" content="@asikarwar">
+<meta name="twitter:site" content="@sikarwarabhi">
 
 {% if og_type == "article" -%}
     <meta name="twitter:label1" content="Written by">
@@ -64,4 +65,25 @@
     {% endif -%}
 {% endif -%}
 
-<meta name="twitter:creator" content="@asikarwar">
+<meta name="twitter:creator" content="@sikarwarabhi">
+
+{% if og_type == "website" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abhimanyu Sikarwar",
+  "url": "{{ config.base_url | safe }}",
+  "jobTitle": "Senior Software Engineer & Team Lead",
+  "worksFor": { "@type": "Organization", "name": "Kodo Technologies" },
+  "knowsAbout": ["JavaScript", "TypeScript", "AI orchestration", "Model Context Protocol", "MCP servers", "LangChain", "LangGraph", "Multi-agent systems", "Svelte", "React", "Node.js"],
+  "sameAs": [
+    "https://github.com/abhimanyu-sikarwar",
+    "https://www.linkedin.com/in/sikarwarabhi",
+    "https://x.com/sikarwarabhi",
+    "https://news.ycombinator.com/user?id=asikarwar",
+    "https://substack.com/@asikarwar"
+  ]
+}
+</script>
+{% endif -%}
