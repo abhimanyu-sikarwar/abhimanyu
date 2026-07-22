@@ -2,7 +2,7 @@
 title = "Turning HTML forms into WebMCP tools"
 date = 2026-07-09
 type = "post"
-description = "The WebMCP declarative API turns an existing HTML form into an agent-callable tool with two attributes, and gives you events and CSS hooks for what happens next."
+description = "The WebMCP declarative API turns an HTML form into an agent-callable tool with two attributes, plus events and CSS hooks for what happens next."
 in_search_index = true
 [taxonomies]
 tags = ["WebMCP", "MCP", "AI", "Agents", "HTML", "Forms", "Web Standards"]

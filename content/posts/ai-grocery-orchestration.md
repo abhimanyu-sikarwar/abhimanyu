@@ -2,7 +2,7 @@
 title = "AI Grocery Orchestration with MCP"
 date = 2025-05-10
 type = "post"
-description = "A multi-agent grocery ordering system using Model Context Protocol: set dietary preferences in ChatGPT or Claude, get a meal plan, and have the ingredients ordered for you"
+description = "A multi-agent grocery ordering system using Model Context Protocol: set dietary preferences in ChatGPT or Claude and have ingredients ordered for you."
 in_search_index = true
 [taxonomies]
 tags = ["MCP", "LangChain", "LangGraph", "Python", "AI", "Agents", "OpenAI", "Claude"]

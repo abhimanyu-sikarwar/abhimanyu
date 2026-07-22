@@ -1,5 +1,5 @@
 +++
-title = "Writing WebMCP tools an agent can actually use"
+title = "WebMCP best practices for tool design"
 date = 2026-07-14
 type = "post"
 description = "Tool strategy, naming, schema design, and reliability for WebMCP: the practices that decide whether an agent picks the right tool and calls it correctly."

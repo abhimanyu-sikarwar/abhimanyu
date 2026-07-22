@@ -1,8 +1,8 @@
 +++
-title = "WebMCP: letting your website tell agents what it can do"
+title = "What is WebMCP and why does it matter?"
 date = 2026-07-06
 type = "post"
-description = "WebMCP is a proposed web standard that lets a page register structured tools for AI agents, so an agent calls a function instead of guessing which button to click."
+description = "WebMCP is a proposed web standard that lets a page register structured tools for AI agents, so an agent calls a function instead of guessing."
 in_search_index = true
 [taxonomies]
 tags = ["WebMCP", "MCP", "AI", "Agents", "JavaScript", "Web Standards"]

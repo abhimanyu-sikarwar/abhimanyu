@@ -180,9 +180,9 @@ header {
 }
 
 .name {
-    font-size: 1.05rem;
+    font-size: 1.35rem;
     font-weight: 650;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
     margin: 0;
     color: var(--headline);
 }
@@ -689,7 +689,7 @@ footer {
     }
 
     .name {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .contact-links a {

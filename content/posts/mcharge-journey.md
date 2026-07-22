@@ -1,5 +1,5 @@
 +++
-title = "Building mCharge: an AI assistant for India's doctors"
+title = "mCharge: an AI assistant for Indian doctors"
 date = 2026-07-22
 type = "post"
 description = "Why I started building an AI assistant for India's doctors, and how it went from HTML mockups to a Play Store app with its own MCP server in six weeks."

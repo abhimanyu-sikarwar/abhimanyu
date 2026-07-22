@@ -1,5 +1,5 @@
 +++
-title = "BhashaSethu — a Hindi-Kannada voice translator for travellers"
+title = "BhashaSethu: Hindi-Kannada voice translator"
 date = 2025-08-01
 type = "post"
 description = "A mobile-first PWA for live Hindi-to-Kannada voice translation using Sarvam AI, built for travellers navigating South India"

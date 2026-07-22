@@ -2,7 +2,7 @@
 title = "WebMCP and MCP are not competitors"
 date = 2026-07-10
 type = "post"
-description = "WebMCP does not replace MCP. One exposes your backend to any agent anywhere; the other makes your live web UI callable while the user is on it. Most real systems want both."
+description = "WebMCP does not replace MCP. One exposes your backend to any agent anywhere, the other makes your live web UI callable. Most systems want both."
 in_search_index = true
 [taxonomies]
 tags = ["WebMCP", "MCP", "AI", "Agents", "Architecture", "Web Standards"]

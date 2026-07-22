@@ -2,7 +2,7 @@
 title = "When WebMCP is worth the effort"
 date = 2026-07-13
 type = "post"
-description = "WebMCP pays off where your interface encodes knowledge the user doesn't have: long forms, complex filters, and multi-step flows. Here's how to pick what to expose."
+description = "WebMCP pays off where your interface encodes knowledge the user lacks: long forms, complex filters, and multi-step flows. How to pick what to expose."
 in_search_index = true
 [taxonomies]
 tags = ["WebMCP", "MCP", "AI", "Agents", "UX", "Web Standards"]

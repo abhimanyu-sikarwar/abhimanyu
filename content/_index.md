@@ -1,9 +1,9 @@
 +++
 title = "Home"
-description = "Abhimanyu Sikarwar is a software engineer in Bangalore who builds AI agent systems and MCP servers, currently working on mCharge, an AI assistant for India's doctors."
+description = "Abhimanyu Sikarwar is a software engineer in Bangalore building AI agent systems and MCP servers. Currently working on mCharge, an AI assistant for doctors."
 +++
 
-# Hello
+# Hi, I'm Abhimanyu Sikarwar
 
 <div class="home-container">
 

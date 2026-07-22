@@ -1,5 +1,5 @@
 +++
-title = "Building a unified IP geolocation toolkit in Go"
+title = "A unified IP geolocation toolkit in Go"
 date = 2025-02-23
 type = "post"
 description = "geo-ip-toolkit is an open-source Go service that queries multiple IP geolocation providers and returns one normalized response."

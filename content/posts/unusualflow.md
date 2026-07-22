@@ -1,5 +1,5 @@
 +++
-title = "Unusual Flow — a real-time options activity screener"
+title = "Unusual Flow: an options activity screener"
 date = 2025-02-23
 type = "post"
 description = "A real-time options activity screener for retail traders who want to see where institutional money is flowing"

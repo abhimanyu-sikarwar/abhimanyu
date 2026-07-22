@@ -2,7 +2,7 @@
 title = "Registering WebMCP tools with JavaScript"
 date = 2026-07-08
 type = "post"
-description = "A walkthrough of the WebMCP imperative API: registering and unregistering tools, discovering and executing them, the toolchange event, and cross-origin exposure."
+description = "A walkthrough of the WebMCP imperative API: registering and unregistering tools, discovering and executing them, and cross-origin exposure."
 in_search_index = true
 [taxonomies]
 tags = ["WebMCP", "MCP", "AI", "Agents", "JavaScript", "Web Standards"]

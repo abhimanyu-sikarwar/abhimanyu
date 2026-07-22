@@ -9,22 +9,19 @@
     <title>{%- block title %}{{ config.title }}{%- endblock %}</title>
     <meta name="referrer" content="no-referrer-when-downgrade">
     {% include "og.html" %}
-    {%- if config.generate_feeds %}
-    {% block rss -%}
-    <link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="{{ config.title }}" href="{{ get_url(path=config.feed_filename) | safe }}">
-    {%- endblock -%}
-    {%- endif %}
+    <link rel="alternate" type="application/atom+xml" title="{{ config.title }} — Posts" href="{{ get_url(path='/posts/atom.xml') | safe }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ config.title }} — TIL" href="{{ get_url(path='/tils/atom.xml') | safe }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ get_url(path="styles/main.css", trailing_slash=false) | safe }}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js" integrity="sha512-4lykFR6C2W55I60sYddEGjieC2fU79R7GUtaqr3DzmNbo0vSaO1MfUjMoTFYYuedjfEix6uV9jVTtRCSBU/Xiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js" integrity="sha512-4lykFR6C2W55I60sYddEGjieC2fU79R7GUtaqr3DzmNbo0vSaO1MfUjMoTFYYuedjfEix6uV9jVTtRCSBU/Xiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer data-domain="abhimanyusikarwar.com" src="https://pls.abhimanyusikarwar.com/js/script.js"></script>
 </head>
 <body>
 <header>
     <a href="{{ config.base_url | safe }}" class="title">
-        <h2 class="name">{{ config.title }}</h2>
+        <span class="name">{{ config.title }}</span>
     </a>
     <nav>
         <div class="nav-items">
@@ -56,7 +53,7 @@
     </div>
 </footer>
 <script>
-    feather.replace();
+    // Theme is applied immediately; icons wait for the deferred feather script.
     const themeToggle = document.querySelector('.theme-toggle');
     const currentTheme = localStorage.getItem('theme')
         || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -64,13 +61,14 @@
     document.body.setAttribute('data-theme', currentTheme);
     if (currentTheme === 'dark') {
         themeToggle.innerHTML = '<i data-feather="sun"></i>';
-        feather.replace();
     }
+
+    const drawIcons = () => window.feather && window.feather.replace();
+    document.addEventListener('DOMContentLoaded', drawIcons);
 
     themeToggle.addEventListener('click', function() {
         let theme = 'light';
-        
-        // Add the transition class
+
         document.body.classList.add('theme-transition');
 
         if (document.body.getAttribute('data-theme') !== 'dark') {
@@ -79,11 +77,10 @@
         } else {
             themeToggle.innerHTML = '<i data-feather="moon"></i>';
         }
-        feather.replace();
+        drawIcons();
         document.body.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
 
-        // Remove the transition class after 0.5s
         setTimeout(() => {
             document.body.classList.remove('theme-transition');
         }, 500);
