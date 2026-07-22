@@ -1,6 +1,6 @@
 +++
 title = "Home"
-description = "Abhimanyu Sikarwar is a senior software engineer in Bangalore building AI agent systems, MCP servers, and orchestration workflows in JavaScript, TypeScript, and Python."
+description = "Abhimanyu Sikarwar is a software engineer in Bangalore who builds AI agent systems and MCP servers, currently working on mCharge, an AI assistant for India's doctors."
 +++
 
 # Hello
@@ -9,7 +9,7 @@ description = "Abhimanyu Sikarwar is a senior software engineer in Bangalore bui
 
   <div class="home-content">
 
-I'm Abhimanyu — you might stumble across `@asikarwar` in some corners of the internet. I'm a Sr. Software Engineer at [Kodo](https://kodo.com/), where I build fintech platforms and, lately, production AI systems. The most recent is an agentic assistant that answers questions about invoices, reimbursements, and transactions in plain language, built on LangChain and LangGraph.
+I'm Abhimanyu, though you might stumble across `@asikarwar` in some corners of the internet. I'm a Sr. Software Engineer at [Kodo](https://kodo.com/), where I build fintech platforms and, lately, production AI systems. The most recent is an agentic assistant that answers questions about invoices, reimbursements, and transactions in plain language, built on LangChain and LangGraph.
 
 Right now I'm building [mCharge](https://mcharge.in), an AI assistant for India's doctors. It writes clinical notes and discharge summaries, reads photos of lab reports and ECGs, checks drug doses and interactions, and explains a diagnosis in the patient's language. Underneath is an orchestration platform with custom and remote MCP servers, skills, projects, and patient history memory. Its [tools directory](https://mcharge.in/tools) has 37 clinical calculators, 23 data lookups, and 24 medical datasets, all callable by any AI assistant over MCP.
 

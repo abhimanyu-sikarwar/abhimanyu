@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://abhimanyusikarwar.com/"
 title = "Abhimanyu Sikarwar"
-description = "Abhimanyu Sikarwar — senior JavaScript/TypeScript engineer building AI agents, MCP servers, and orchestration workflows. Notes on programming, tech and life."
+description = "Abhimanyu Sikarwar, a software engineer in Bangalore building AI agent systems and MCP servers. Notes on programming, tech and life."
 generate_feeds = false
 feed_filenames = ["atom.xml"] # default template
 
