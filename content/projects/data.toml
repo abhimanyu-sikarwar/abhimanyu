@@ -1,4 +1,13 @@
 [[project]]
+name = "mCharge"
+description = "AI assistant for India's doctors — writes clinical notes and discharge summaries, reads photos of lab reports and ECGs, checks drug doses and interactions, and explains diagnoses in the patient's language. Built on an AI orchestration platform with custom/remote MCP servers, skills, and patient history memory; ships 37 clinical calculators, 23 data tools, and 24 medical datasets usable by any AI assistant via MCP."
+links = [
+  { name = "Blog", url = "https://abhimanyusikarwar.com/posts/mcharge-journey/" },
+  { name = "Website", url = "https://mcharge.in" },
+  { name = "Tools", url = "https://mcharge.in/tools" },
+]
+
+[[project]]
 name = "AI Grocery Orchestration"
 description = "Multi-agent grocery ordering system built on the Model Context Protocol (MCP) with LangChain and LangGraph; user sets dietary preferences in ChatGPT/Claude, the system generates a meal plan, then orders the ingredients from nearby stores on its own."
 links = [

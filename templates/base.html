@@ -16,7 +16,7 @@
     {%- endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ get_url(path="styles/main.css", trailing_slash=false) | safe }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js" integrity="sha512-4lykFR6C2W55I60sYddEGjieC2fU79R7GUtaqr3DzmNbo0vSaO1MfUjMoTFYYuedjfEix6uV9jVTtRCSBU/Xiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer data-domain="abhimanyusikarwar.com" src="https://pls.abhimanyusikarwar.com/js/script.js"></script>
@@ -32,9 +32,9 @@
             {%- if config.extra.main_menu %}
             {%- for item in config.extra.main_menu %}
             {%- if item.url is matching("https?://") %}
-            <a href="{{ item.url | safe }}">{{ item.name | safe }}</a>
+            <a href="{{ item.url | safe }}"{% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.name | safe }}</a>
             {%- else %}
-            <a href="{{ get_url(path=item.url ) | safe }}">{{ item.name | safe }}</a>
+            <a href="{{ get_url(path=item.url ) | safe }}"{% if item.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.name | safe }}</a>
             {%- endif %}
             {%- endfor %}
             {%- endif -%}
@@ -46,7 +46,7 @@
 </header>
 {% block main %}{%- endblock -%}
 <footer>
-    © 2025 {{ config.title }}<br>
+    © {{ now() | date(format="%Y") }} {{ config.title }}<br>
     <div class="social-links">
         <a href="https://github.com/abhimanyu-sikarwar" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon"><i data-feather="github"></i></a>
         <a href="https://www.linkedin.com/in/sikarwarabhi" target="_blank" rel="noopener noreferrer" title="Linkedin" class="social-icon"><i data-feather="linkedin"></i></a>
@@ -58,15 +58,13 @@
 <script>
     feather.replace();
     const themeToggle = document.querySelector('.theme-toggle');
-    const currentTheme = localStorage.getItem('theme');
+    const currentTheme = localStorage.getItem('theme')
+        || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
-    // Set the initial theme based on user preference or localStorage
-    if (currentTheme) {
-        document.body.setAttribute('data-theme', currentTheme);
-        if (currentTheme === 'dark') {
-            themeToggle.innerHTML = '<i data-feather="sun"></i>';
-            feather.replace();
-        }
+    document.body.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        themeToggle.innerHTML = '<i data-feather="sun"></i>';
+        feather.replace();
     }
 
     themeToggle.addEventListener('click', function() {

@@ -23,7 +23,7 @@ external_links_target_blank = true
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 # highlight_code = true
 # highlight_theme = "one-dark"
-render_emoji = true
+render_emoji = false
 smart_punctuation = true
 [extra]
 date_format="%d %b, %Y"
@@ -39,6 +39,11 @@ url = "@/projects/_index.md"
 [[extra.main_menu]]
 name = "TIL"
 url = "@/tils/_index.md"
+
+[[extra.main_menu]]
+name = "Resume"
+url = "@/resume/index.md"
+new_tab = true
 
 [[extra.main_menu]]
 name = "Contact"

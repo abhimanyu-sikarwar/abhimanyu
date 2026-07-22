@@ -144,10 +144,9 @@ For issues, feature requests, or contributions, please visit the [project reposi
 
 ## Recent Updates
 
-### Latest Features (November 2025)
-- ✨ **PDF Export**: Generate print-ready PDFs with custom styling
-- ✨ **Styled HTML Export**: Professional HTML with Prism.js syntax highlighting
-- 🎨 **Custom CSS Support**: Beautiful formatting for all export types
-- 💡 **Syntax Highlighting**: Support for multiple programming languages
-- 📋 **Enhanced Tables**: Properly formatted tables in all export formats
-- 🔧 **Print Optimization**: Clean PDF output without browser headers/footers
+### Latest features (November 2025)
+- PDF export with print-ready styling, without browser headers and footers
+- Styled HTML export with Prism.js syntax highlighting
+- Custom CSS support across all export types
+- Syntax highlighting for multiple programming languages
+- Better table formatting in every export format

@@ -8,16 +8,14 @@
     <div class="meta">
       {%- if page.date %}
       <div class="post-date">
-              <i>
-                  <time datetime='{{ page.date | date(format='%+') }}' pubdate>
-                      {{- page.date | date(format=config.extra.date_format) -}}
-                  </time>
-              </i>
+          <time datetime='{{ page.date | date(format='%+') }}' pubdate>
+              {{- page.date | date(format=config.extra.date_format) -}}
+          </time>
       </div>
       <div class="reading-time">
           {% set word_count = page.content | split(pat=" ") | length %}
           {% set reading_time = (word_count / 250) | round %}
-          <i>{{ reading_time }} minutes ({{ word_count }} words)</i>
+          {{ reading_time }} min read · {{ word_count }} words
       </div>
       {%- endif %}
   </div>  
