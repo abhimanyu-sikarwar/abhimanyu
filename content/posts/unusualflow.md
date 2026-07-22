@@ -1,8 +1,8 @@
 +++
-title = "Unusual Flow — The Ultimate Options Activity Screener"
+title = "Unusual Flow — a real-time options activity screener"
 date = 2025-02-23
 type = "post"
-description = "A real-time options activity screener that helps traders follow the smart money by tracking unusual institutional options flow"
+description = "A real-time options activity screener for retail traders who want to see where institutional money is flowing"
 in_search_index = true
 [taxonomies]
 tags = ["React", "TypeScript", "WebSocket", "Fintech", "SaaS"]
@@ -10,34 +10,34 @@ tags = ["React", "TypeScript", "WebSocket", "Fintech", "SaaS"]
 
 ## Overview
 
-[Unusual Flow](https://unusualflow.com) is a real-time options activity screener built for retail traders who want to track where institutional "smart money" is flowing. It monitors the options market for unusual activity — large block trades, sweeps, and abnormal volume — giving traders actionable insight into what the big players are doing.
+[Unusual Flow](https://unusualflow.com) is a real-time options activity screener for retail traders who want to see where institutional money is flowing. It watches the options market for activity that stands out: large block trades, sweeps, and volume far above the norm for a ticker.
 
-## What It Does
+## What it does
 
-The platform continuously scans live options market data and surfaces trades that stand out from the noise:
+The screener scans live options market data and surfaces trades that stand out from the noise:
 
-- **Unusual Options Activity**: Detects large or anomalous trades that may signal institutional positioning
-- **Option Sweeps**: Tracks aggressive sweep orders that hit multiple exchanges simultaneously
-- **Volume Analysis**: Flags tickers with options volume significantly above open interest or historical norms
-- **Market Sentiment**: Aggregates flow data to provide a read on overall market direction
+- Detects large or anomalous trades that may signal institutional positioning
+- Tracks aggressive sweep orders that hit multiple exchanges at once
+- Flags tickers whose options volume is far above open interest or historical norms
+- Aggregates flow data into a read on overall market direction
 
-## Tech Stack
+## Tech stack
 
-- **Frontend**: React, TypeScript
-- **Data Streaming**: WebSocket integration for real-time market data
-- **Payments**: Stripe for subscription billing
-- **Analytics**: Google Tag Manager for usage tracking
+- Frontend: React, TypeScript
+- Data streaming: WebSocket for real-time market data
+- Payments: Stripe for subscription billing
+- Analytics: Google Tag Manager
 
-## Key Features
+## Features
 
-- **Real-Time Flow**: Live-streaming options data with instant updates as trades hit the tape
-- **Smart Money Tracking**: Follow institutional-level trades that retail platforms typically miss
-- **Sentiment Dashboard**: Aggregated view of bullish vs bearish flow across the market
-- **Subscription SaaS**: Tiered pricing with Stripe-powered billing
-- **Referral Program**: Built-in affiliate system for user growth
+- Live-streaming options data, updating as trades hit the tape
+- Institutional-level trades that most retail platforms don't surface
+- A sentiment dashboard aggregating bullish versus bearish flow
+- Tiered subscriptions billed through Stripe
+- A built-in referral program
 
-## Why I Built This
+## Why I built this
 
-Most retail traders are flying blind when it comes to what institutions are doing. Platforms that surface this data either charge premium prices or bury the signal in noise. Unusual Flow aims to make smart money tracking accessible with a clean, fast interface that cuts straight to what matters — where the big bets are being placed.
+Most retail traders can't see what institutions are doing. The platforms that surface this data either charge a lot or bury the signal in noise. Unusual Flow shows where the big bets are being placed, in an interface fast enough to act on.
 
 Visit [unusualflow.com](https://unusualflow.com) to try it out.

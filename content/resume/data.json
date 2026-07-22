@@ -9,7 +9,7 @@
     "location": "Bangalore, Karnataka, India"
   },
   "title": "Sr. Software Engineer with experience in AI/ML",
-  "summary": "Sr. Software Engineer and Team Lead with 7+ years building full-stack products and AI-powered systems. Hands-on with LangChain, LangGraph, RAG pipelines, and agentic AI in production. Skilled in React, TypeScript, Python, and scalable system design. Track record of leading teams and shipping high-impact products.",
+  "summary": "Sr. Software Engineer and Team Lead with 7+ years building full-stack products and AI-powered systems. Hands-on with LangChain, LangGraph, RAG pipelines, and agentic AI in production. Skilled in React, TypeScript, Python, and scalable system design. Leads a team of 5 engineers and has shipped products across fintech, insurance, and e-commerce.",
   "skills": [
     "React",
     "TypeScript",
@@ -63,7 +63,7 @@
       "startDate": "2022-08",
       "endDate": "Present",
       "bullets": [
-        "Designed and deployed a production-grade agentic AI reporting assistant using LangChain and LangGraph; agent uses RAG pipelines over company invoices, reimbursements, and transaction records with vector search to answer financial queries via natural language chat, eliminating manual report generation.",
+        "Designed and deployed an agentic AI reporting assistant using LangChain and LangGraph; the agent runs RAG pipelines with vector search over company invoices, reimbursements, and transaction records to answer financial queries in natural language chat, replacing manual report generation.",
         "Built multi-agent orchestration workflows with tool-use and memory for complex multi-step financial reasoning; applied prompt engineering techniques to improve response accuracy and reduce hallucinations in enterprise financial context.",
         "Architected procure-to-pay platform with role-based approval workflows (Form.IO), covering PO creation, vendor selection, invoice generation, and payment via credit cards and virtual accounts; delivered in 6 months against a 12-month estimate.",
         "Led corporate credit card onboarding platform that evaluated creditworthiness using financial data and director scores; replaced spreadsheet ops and cut onboarding time by 50%.",
@@ -100,10 +100,32 @@
   ],
   "projects": [
     {
-      "name": "AI Voice Lead Qualification Agent (MCP)",
-      "description": "Agentic AI system that autonomously calls sales leads via Sarvam AI text-to-voice, conducts dynamic qualification conversations, and scores leads by interest level — enabling sales teams to focus only on high-intent prospects",
-      "startDate": "2026-01",
+      "name": "mCharge — AI Assistant for India's Doctors",
+      "description": "AI assistant for India's doctors: writes clinical notes and discharge summaries, reads photos of lab reports and ECGs, checks drug doses and interactions, and explains diagnoses in the patient's language. Live on Google Play and web.",
+      "url": "mcharge.in",
+      "startDate": "2026-06",
       "endDate": "Present",
+      "technologies": [
+        "TypeScript",
+        "React Native",
+        "Expo",
+        "Node.js",
+        "MongoDB",
+        "MCP",
+        "Cloudflare Workers"
+      ],
+      "highlights": [
+        "Built an AI orchestration platform with custom and remote MCP servers, skills, projects, and patient history memory; shipped an Android app on Google Play and a web app in six weeks.",
+        "Wrote clinical-mcp, a TypeScript MCP server exposing 60+ tools: ICD-10/11, LOINC, and HCPCS code lookups, RxNorm drug search, drug-drug interaction checks, and 35 deterministic clinical calculators; deployed as a remote MCP server on Cloudflare Workers, usable by any MCP client.",
+        "Designed a document-reading pipeline where a vision model transcribes photographed lab reports, ECGs, and prescriptions for a text-only chat model, with extractions cached by content hash to avoid re-billing.",
+        "Enforced safety rules for clinical use: dose and score arithmetic goes through deterministic calculators instead of the LLM, citations come only from doctor-provided documents, and memory sits behind consent controls with an audit trail."
+      ]
+    },
+    {
+      "name": "AI Voice Lead Qualification Agent (MCP)",
+      "description": "Agentic AI system that calls sales leads via Sarvam AI text-to-voice, runs qualification conversations, and scores leads by interest level, so sales teams talk only to high-intent prospects",
+      "startDate": "2026-01",
+      "endDate": "2026-05",
       "technologies": [
         "MCP",
         "LangGraph",
@@ -114,16 +136,16 @@
         "LLMs"
       ],
       "highlights": [
-        "Built agentic voice calling pipeline using Sarvam AI text-to-voice; AI agent calls leads, listens to responses, and dynamically generates follow-up questions based on conversation context to assess purchase intent.",
-        "Implemented MCP-based orchestration to coordinate the calling agent, response analysis agent, and CRM update agent — each agent hands off structured context to the next without human intervention.",
+        "Built agentic voice calling pipeline using Sarvam AI text-to-voice; the agent calls leads, listens to responses, and generates follow-up questions from conversation context to assess purchase intent.",
+        "Implemented MCP-based orchestration to coordinate the calling agent, response analysis agent, and CRM update agent; each agent hands structured context to the next without human intervention.",
         "Designed lead scoring model that classifies leads as hot, warm, or cold based on conversation transcript analysis using LLMs; reduced manual follow-up effort by filtering out uninterested leads before reaching the sales team."
       ]
     },
     {
       "name": "AI Grocery Orchestration (MCP)",
-      "description": "Multi-agent grocery ordering system using Model Context Protocol; user sets dietary preferences in ChatGPT/Claude, AI generates a personalized meal plan, then autonomously orders required ingredients from nearby stores based on location",
+      "description": "Multi-agent grocery ordering system using Model Context Protocol; user sets dietary preferences in ChatGPT/Claude, the system generates a meal plan, then orders the ingredients from nearby stores based on location",
       "startDate": "2025-10",
-      "endDate": "Present",
+      "endDate": "2026-01",
       "technologies": [
         "MCP",
         "LangChain",

@@ -18,7 +18,7 @@ Every tool chasing that demand assumes a Western clinic. They integrate with an 
 
 ## Week one: mockups to a real app
 
-It wasn't a medical app. It was a set of plain HTML pages mocking up a chat workspace: projects, skills, settings, history. Within the first day the copy shifted from "AI Workspace" to clinical language, and the mockups became the spec.
+The first version wasn't a medical app, just plain HTML pages mocking up a chat workspace: projects, skills, settings, history. Within the first day the copy shifted from "AI Workspace" to clinical language, and the mockups became the spec.
 
 The next day I started the real mobile app in Expo and React Native. The backend followed on June 16, and the first backend commit says a lot about the domain: SSRF protection, vault encryption, and MongoDB before any feature work. When the data is health data, security is not a later milestone.
 
@@ -36,7 +36,7 @@ One principle from that original backlog survived every rewrite: AI augments, it
 
 The model never does dose or score arithmetic. eGFR, CHA₂DS₂-VASc, Wells, MELD 3.0, and the rest are deterministic calculators with typed inputs; the assistant calls them as tools and reports the result. An LLM that is right about a creatinine clearance 98% of the time is a hazard, and a calculator is right 100% of the time.
 
-Citations only come from documents the doctor provided — project files, attachments, remembered context — never the open web, and the UI treats them as traceability aids rather than proof. Memory is capped, user-visible, and sits behind consent controls, alongside an audit trail and configurable retention. None of this is decoration; it's what makes the tool usable in a clinic at all.
+Citations only come from documents the doctor provided (project files, attachments, remembered context), never the open web, and the UI treats them as traceability aids, not proof. Memory is capped, user-visible, and sits behind consent controls, alongside an audit trail and configurable retention. These constraints are what make the tool usable in a clinic at all.
 
 ## An MCP server any assistant can use
 
@@ -50,4 +50,4 @@ This was the part of the build where the side projects paid off. The grocery-ord
 
 Six weeks and a couple hundred commits in, mCharge is live: an Android app on Google Play with in-app updates, a web app, and the public tools directory. The near-term roadmap is ambient scribing (listen to the consult, draft the note for the doctor to edit), evidence-linked answers that flag anything not grounded in a guideline, and handoff digests that summarize what changed in a chart overnight.
 
-If you're a doctor in India, or you know one buried in paperwork, I'd like to hear what would actually help — [mcharge.in](https://mcharge.in) or [reach me here](@/contact.md).
+If you're a doctor in India, or you know one buried in paperwork, I'd like to hear what would actually help: [mcharge.in](https://mcharge.in), or [reach me here](@/contact.md).
