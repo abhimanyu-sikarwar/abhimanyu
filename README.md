@@ -120,24 +120,44 @@ The theme includes smooth transitions between light and dark modes:
    - Choose "Zola" as the Framework preset
 
 3. **Build Settings**:
-   - Build command will be auto-filled
-   - Build output directory will be auto-filled
+   - Choose "Zola" as the Framework preset, which fills in the build command
+     (`zola build`) and output directory (`public`)
+   - Build image version: v3, which ships Zola 0.22.1
    - Add environment variable:
      - Name: `ZOLA_VERSION`
-     - Value: `0.17.2` (or your preferred version)
+     - Value: `0.22.1`
 
 4. Click "Save and Deploy"
 
+Note that this site needs Zola 0.19 or newer, because `config.toml` uses
+`generate_feeds` and `feed_filenames`. Those keys were named in the singular
+before 0.19.
+
+### Preview deployments
+
+Preview builds are served from a branch URL such as
+`https://branch-name.project.pages.dev`, but `base_url` in `config.toml` is
+hardcoded to the production domain. Since Zola writes absolute URLs into
+canonical tags, Open Graph tags, feeds, and the sitemap, a preview built with
+the production `base_url` points all of them at the live site.
+
+Replace the build command with this to build previews against their own URL:
+
+```sh
+if [ "$CF_PAGES_BRANCH" = "main" ]; then zola build; else zola build --base-url $CF_PAGES_URL; fi
+```
+
+`CF_PAGES_BRANCH` and `CF_PAGES_URL` are supplied by Cloudflare Pages.
+
 ### Troubleshooting
 
-If you encounter `zola: not found` error, try either:
+If the build fails with `zola: not found`, the build image is too old to include
+Zola. Set the build image to v3 rather than installing Zola through a pre-build
+script.
 
-1. **Use UNSTABLE_PRE_BUILD**:
-   - Add environment variable:
-     - Name: `UNSTABLE_PRE_BUILD`
-     - Value:
-       ```sh
-       asdf plugin add zola https://github.com/salasrod/asdf-zola && asdf install zola 0.18.0 && asdf global zola 0.18.0
-       ```
+If the build fails inside a `UNSTABLE_PRE_BUILD` environment variable, delete
+that variable. Older setups used it to install Zola through asdf, which breaks
+on any build after the first: Cloudflare caches the asdf plugin directory, so
+`asdf plugin add` exits with code 2 and takes the rest of the command with it.
 
 For more details, check the [Cloudflare Pages documentation](https://developers.cloudflare.com/pages/) and [Zola deployment guide](https://www.getzola.org/documentation/deployment/cloudflare-pages/).
