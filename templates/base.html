@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if config.extra.favicon %}
-    <link rel="shortcut icon" href="{{ config.extra.favicon }}">
-    {%- endif -%}
+    <link rel="icon" href="{{ get_url(path="favicon.ico", trailing_slash=false) | safe }}" sizes="32x32">
+    <link rel="icon" href="{{ get_url(path="favicon.svg", trailing_slash=false) | safe }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ get_url(path="apple-touch-icon.png", trailing_slash=false) | safe }}">
     <title>{%- block title %}{{ config.title }}{%- endblock %}</title>
     <meta name="referrer" content="no-referrer-when-downgrade">
     {% include "og.html" %}
