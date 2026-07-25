@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {%- set build_date = now(utc=true) | date(format="%Y-%m-%d") %}
     {%- for sitemap_entry in entries %}
     <url>
         <loc>{{ sitemap_entry.permalink | escape_xml | safe }}</loc>
-        {%- if sitemap_entry.updated %}
-        <lastmod>{{ sitemap_entry.updated }}</lastmod>
-        {%- elif sitemap_entry.date %}
-        <lastmod>{{ sitemap_entry.date }}</lastmod>
-        {%- endif %}
+        <lastmod>{{ build_date }}</lastmod>
     </url>
     {%- endfor %}
 </urlset>
+{# lastmod is the build date for every entry, not the page's own date, so a deploy
+   is enough to signal freshness. Kept out of the front matter deliberately: pages
+   have no `updated` field, so og.html's article:modified_time still tracks the real
+   publication date. One `set` outside the loop keeps every entry on one date even
+   if a build straddles midnight. #}
