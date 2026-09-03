@@ -9,7 +9,7 @@
     "location": "Bangalore, Karnataka, India"
   },
   "title": "Sr. Software Engineer with experience in AI/ML",
-  "summary": "Sr. Software Engineer and Team Lead with 7+ years building full-stack products and AI-powered systems. Hands-on with LangChain, LangGraph, RAG pipelines, and agentic AI in production. Skilled in React, TypeScript, Python, and scalable system design. Leads a team of 5 engineers and has shipped products across fintech, insurance, and e-commerce.",
+  "summary": "Sr. Software Engineer and Team Lead with 8+ years building full-stack products and AI-powered systems. Hands-on with LangChain, LangGraph, RAG pipelines, and agentic AI in production. Skilled in React, TypeScript, Python, and scalable system design. Leads a cross-functional team of 5 and has shipped products to enterprise customers including Aditya Birla Sun Life Insurance, Wipro, and Mensa Brands across fintech, insurance, and e-commerce.",
   "skills": [
     "React",
     "TypeScript",
@@ -53,35 +53,39 @@
     "Docker",
     "CI/CD",
     "Jira",
-    "Figma"
+    "Figma",
+    "PostgreSQL",
+    "Form.IO"
   ],
   "experience": [
     {
       "company": "Kodo Technologies",
-      "title": "Sr. Software Engineer & Team Lead",
-      "location": "Bangalore",
+      "title": "Senior Software Engineer",
+      "location": "Remote",
       "startDate": "2022-08",
       "endDate": "Present",
       "bullets": [
         "Designed and deployed an agentic AI reporting assistant using LangChain and LangGraph; the agent runs RAG pipelines with vector search over company invoices, reimbursements, and transaction records to answer financial queries in natural language chat, replacing manual report generation.",
         "Built multi-agent orchestration workflows with tool-use and memory for complex multi-step financial reasoning; applied prompt engineering techniques to improve response accuracy and reduce hallucinations in enterprise financial context.",
-        "Architected procure-to-pay platform with role-based approval workflows (Form.IO), covering PO creation, vendor selection, invoice generation, and payment via credit cards and virtual accounts; delivered in 6 months against a 12-month estimate.",
-        "Led corporate credit card onboarding platform that evaluated creditworthiness using financial data and director scores; replaced spreadsheet ops and cut onboarding time by 50%.",
-        "Raised test coverage from 15% to 80% and reduced production bug rate by 60% by establishing code review standards and CI/CD pipelines across a team of 5 engineers."
+        "Architected the procure-to-pay platform on a headless Form.IO setup with role-based approval workflows, covering PO creation, vendor selection, invoice generation, and payment via credit cards and virtual accounts; delivered in 6 months against a 2-year plan, then led Mensa Brands' migration from Zoho onto it with real-time audit compliance.",
+        "Led the corporate card platform end to end: UI automation across issuance, limits, and expense capture lifted program efficiency by 40% and cut expense management costs by 25%; fraud detection and automated risk analysis brought fraudulent transactions down 30%.",
+        "Built corporate credit card onboarding that evaluated creditworthiness using financial data and director scores; replaced spreadsheet ops and cut onboarding time by 50%.",
+        "Raised test coverage from 15% to 80% and reduced production bug rate by 60% by establishing code review standards and CI/CD pipelines across a cross-functional team of 5 engineers spanning frontend, backend, and QA."
       ]
     },
     {
       "company": "Artivatic Data Labs",
-      "title": "Sr. Frontend Developer & Team Lead",
+      "title": "Sr. Frontend Developer",
       "location": "Bangalore",
       "startDate": "2021-03",
       "endDate": "2022-08",
       "bullets": [
-        "Collaborated with ML engineers to fine-tune and productionize an AI underwriting engine (AUSIS) that scored insurance applications using multi-modal inputs — medical records, financial history, location-based fraud signals, and wearable health data; built Angular UI surfacing model risk scores and recommendations, cutting processing time by 40% per application.",
-        "Contributed to production insurance fraud detection model integrating behavioral signals, claim patterns, and historical data; built real-time review dashboard visualizing model outputs, fraud scores, and detection reasoning for claims teams.",
-        "Integrated computer-vision AI model for vehicle damage assessment; model analyzed uploaded claim videos, detected damaged parts, and predicted repair and replacement costs including labor; enabled faster claims estimates and fraud detection for duplicate or inflated claims.",
-        "Worked with Python-based ML APIs to surface model outputs in Angular UIs; participated in model evaluation cycles and fine-tuning feedback loops; delivered enterprise-grade platform for Wipro serving 500+ users.",
-        "Led 3 engineers to build shared component library across all AI product UIs; accelerated feature delivery by 35%."
+        "Led the UI architecture for AUSIS, an AI underwriting engine deployed at Aditya Birla Sun Life Insurance that scored insurance applications using multi-modal inputs: medical records, financial history, location-based fraud signals, and wearable health data. The Angular UI surfaced real-time model risk scores and recommendations, cutting manual underwriting time by 40% per application.",
+        "Built Insta Insurance, a digital platform for instant term life purchase: onboarding got 60% shorter, documentation requirements dropped, policy issuance ran 75% faster, and the product reached 15,000+ customers.",
+        "Contributed to Wipro Intelligent Underwriter, an AI risk assessment platform built in partnership with Artivatic, improving fraud detection accuracy and cutting claim processing time; the platform served 500+ users.",
+        "Integrated a computer-vision model for vehicle damage assessment that analyzed uploaded claim videos, detected damaged parts, and predicted repair and replacement costs including labor, which sped up claims estimates and flagged duplicate or inflated claims.",
+        "Built a vehicle insurance renewals CRM where lead management joins customer and vehicle data to automate policy renewals, NCB-based premium adjustments, and dynamic discounting.",
+        "Led 3 frontend engineers to build a shared component library used across the AI product line; accelerated feature delivery by 35%."
       ]
     },
     {
@@ -92,9 +96,9 @@
       "endDate": "2021-03",
       "bullets": [
         "Cart abandonment hit 45% at checkout; integrated Stripe and Paytm with unified UX and error recovery flows; raised conversion by 25% and cut payment failures by 40%.",
-        "EdTerra had 20% monthly churn; added blogs, quizzes, and geolocation content features; lifted engagement 40% and reduced churn to 12%.",
+        "Built the EdTerra Edventures learning platform with blogs, podcasts, quizzes, and location-based learning, which lifted student engagement by 40% and cut monthly churn from 20% to 12%.",
         "Site load times reached 3 seconds under traffic spikes; applied Redis caching, query tuning, and CDN; cut load time to under 1.5 seconds and tripled capacity.",
-        "Delivered Houzzcart e-commerce platform in 4 months using Angular 12 and Node.js; launched on time with zero critical bugs."
+        "Delivered Houzzcart, a home decor e-commerce platform, in 4 months using Angular 11 and Node.js; launched on time with zero critical bugs and improved UI performance by 30%."
       ]
     }
   ],

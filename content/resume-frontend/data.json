@@ -1,0 +1,178 @@
+{
+  "name": "Abhimanyu Sikarwar",
+  "contact": {
+    "email": "abhimanyusikarwar@outlook.com",
+    "phone": "+91-9711048756",
+    "linkedin": "linkedin.com/in/sikarwarabhi",
+    "github": "github.com/abhimanyu-sikarwar",
+    "website": "abhimanyusikarwar.com",
+    "location": "Bangalore, Karnataka, India"
+  },
+  "title": "Senior Frontend Engineer — React / Next.js",
+  "summary": "Frontend engineer with 8+ years building production UIs in React, Next.js, and TypeScript. Owns component libraries and keeps a product surface consistent, turns Figma specs into accessible interfaces to WCAG 2.1 AA, and tunes LCP, CLS, and interaction responsiveness. Works daily in Claude Code, Cursor, GitHub Copilot, and Codex, and reviews what they produce before it ships. Builds AI-powered UI in production: streaming chat interfaces over LLM APIs, and dashboards that render model output.",
+  "skills": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "Tailwind CSS",
+    "HTML5",
+    "Redux Toolkit",
+    "React Query (TanStack)",
+    "Next International (i18n)",
+    "Material UI",
+    "shadcn/ui",
+    "Radix UI",
+    "Headless UI",
+    "Chakra UI",
+    "Ant Design",
+    "Framer Motion",
+    "GSAP",
+    "Design Systems",
+    "Component Libraries",
+    "Figma",
+    "WCAG 2.1 AA",
+    "ARIA",
+    "Keyboard Navigation",
+    "Core Web Vitals (LCP, INP, CLS)",
+    "Code Splitting",
+    "Lazy Loading",
+    "Bundle Optimization",
+    "CDN",
+    "Claude Code",
+    "Cursor",
+    "GitHub Copilot",
+    "Codex",
+    "AI Code Review",
+    "LLM APIs (OpenAI, Anthropic)",
+    "Streaming UI",
+    "LangChain / LangGraph",
+    "RAG",
+    "MCP",
+    "React Native",
+    "Node.js",
+    "REST APIs",
+    "WebSocket",
+    "Headless CMS",
+    "Jest",
+    "React Testing Library",
+    "Playwright",
+    "Git",
+    "CI/CD",
+    "Agile/Scrum",
+    "Code Reviews",
+    "Design Critiques",
+    "Technical Mentoring"
+  ],
+  "experience": [
+    {
+      "company": "Kodo Technologies",
+      "title": "Senior Software Engineer",
+      "location": "Remote",
+      "startDate": "2022-08",
+      "endDate": "Present",
+      "bullets": [
+        "Build and maintain the React and Next.js UI for Kodo's spend platform in TypeScript, on a headless Form.IO architecture that lets finance teams define approval forms and workflows without a release. Delivered procurement in 6 months against a 2-year plan, then led Mensa Brands' migration from Zoho onto it.",
+        "Use Claude Code, Cursor, Copilot, and Codex daily to build and prototype components, and set the review standards the team applies to AI-generated code before it merges.",
+        "Built the streaming chat interface for an agentic AI reporting assistant (LangChain, LangGraph): tokens render as they arrive, long report answers stay interactive, and finance teams query invoices, reimbursements, and transactions in natural language.",
+        "Fixed the load and interaction bottlenecks on the dashboard with route-level code splitting, lazy loading of heavy report views, and CDN caching, tracking LCP, INP, and CLS as the measure.",
+        "Led the corporate card platform end to end: UI automation across issuance, limits, and expense capture lifted program efficiency by 40% and cut expense management costs by 25%; fraud detection and risk analysis in the card flows brought fraudulent transactions down 30%.",
+        "Raised frontend test coverage from 15% to 80% and cut the production bug rate by 60% through code review standards and CI gates, working across a team of 5 spanning frontend, backend, and QA in weekly sprint planning and design critiques."
+      ]
+    },
+    {
+      "company": "Artivatic Data Labs",
+      "title": "Sr. Frontend Developer",
+      "location": "Bangalore",
+      "startDate": "2021-03",
+      "endDate": "2022-08",
+      "bullets": [
+        "Owned the shared component library across the product line and enforced consistency on every surface built from it, which sped up delivery on each project; led 3 frontend engineers.",
+        "Translated Figma specs into pixel-accurate components, then took the UI to WCAG 2.1 AA: audited against the standard and fixed keyboard navigation, focus management, ARIA semantics, and contrast.",
+        "Led the UI architecture for AUSIS, a machine-learning underwriting platform deployed at Aditya Birla Sun Life Insurance; the interface rendered real-time model risk scores and cut manual underwriting time by 40%.",
+        "Built Insta Insurance, a digital platform for instant term life purchase: onboarding got 60% shorter, policy issuance ran 75% faster, and the product reached 15,000+ customers.",
+        "Worked directly with backend and ML engineers to wire Python model APIs into the frontend for Wipro Intelligent Underwriter, an AI risk assessment platform built in partnership with Artivatic.",
+        "Built a vehicle insurance renewals CRM where lead management joins customer and vehicle data to automate renewals, NCB-based premium adjustments, and dynamic discounting."
+      ]
+    },
+    {
+      "company": "Swipebucks Softs Pvt. Ltd",
+      "title": "Full Stack Developer",
+      "location": "Mohali, Punjab",
+      "startDate": "2018-04",
+      "endDate": "2021-03",
+      "bullets": [
+        "Built Houzzcart, a home decor e-commerce platform, in Angular 11 and Node.js; delivered in 4 months and improved UI performance by 30%.",
+        "Cart abandonment sat at 45% at checkout; put Stripe and Paytm behind one checkout UI with error recovery flows, which raised conversion by 25% and cut payment failures by 40%.",
+        "Page load reached 3 seconds under traffic spikes; added Redis caching, query tuning, and CDN delivery to bring it under 1.5 seconds and triple capacity.",
+        "Built the EdTerra Edventures learning platform with blogs, podcasts, quizzes, and location-based learning, which lifted student engagement by 40%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "mCharge — AI Assistant for India's Doctors",
+      "description": "AI assistant for doctors: writes clinical notes, reads photos of lab reports and ECGs, and checks drug doses and interactions.",
+      "url": "mcharge.in",
+      "startDate": "2026-06",
+      "endDate": "Present",
+      "technologies": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Cloudflare Workers"
+      ],
+      "highlights": [
+        "Shipped an Android app in React Native and Expo plus a React web app in six weeks; the app is live on Google Play.",
+        "Built the chat UI over Anthropic and OpenAI APIs with streaming responses and generative content rendered as it arrives, plus a document capture flow where photographed lab reports and ECGs come back transcribed for review.",
+        "Wrote clinical-mcp, a TypeScript MCP server with 60+ tools covering ICD-10/11, LOINC, and RxNorm lookups, drug interaction checks, and 35 deterministic clinical calculators, deployed on Cloudflare Workers."
+      ]
+    },
+    {
+      "name": "Unusual Flow",
+      "description": "Real-time options trading scanner with WebSocket streaming for live market data.",
+      "url": "unusualflow.com",
+      "startDate": "2024-11",
+      "endDate": "2025-03",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "WebSocket"
+      ],
+      "highlights": [
+        "Built a real-time analytics dashboard in React and TypeScript over a WebSocket feed, which cut decision-making time by 35%.",
+        "Added filtering with saveable presets so traders keep a view per strategy; daily active engagement rose 45%.",
+        "Designed a responsive S&P 500 heatmap with sector-based rendering so the whole index reads on one screen."
+      ]
+    },
+    {
+      "name": "AI Grocery Orchestration (MCP)",
+      "description": "Multi-agent grocery ordering over the Model Context Protocol: the user sets dietary preferences in ChatGPT or Claude and the system plans meals, then orders the ingredients.",
+      "startDate": "2025-10",
+      "endDate": "2026-01",
+      "technologies": [
+        "MCP",
+        "LangChain",
+        "LangGraph",
+        "OpenAI API",
+        "Claude API",
+        "Python"
+      ],
+      "highlights": [
+        "A diet-planning agent builds weekly meal plans from health preferences, then a procurement agent breaks them into ingredient lists and places the orders through store APIs, with MCP handing context between ChatGPT and Claude across both steps."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "NSUT East Campus (AIACTR), GGSIPU",
+      "degree": "B. Tech. - ECE",
+      "location": "Delhi",
+      "startDate": "2014-08",
+      "graduationDate": "2018-05"
+    }
+  ]
+}

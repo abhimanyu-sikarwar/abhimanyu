@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 {% macro fdate(d) %}{% if d == "Present" %}Present{% else %}{% set parts = d | split(pat="-") %}{% set months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"] %}{% set m = parts.1 | int %}{% set mi = m - 1 %}{{ months | nth(n=mi) }} {{ parts.0 }}{% endif %}{% endmacro fdate %}
-{% set r = load_data(path="content/resume/data.json", format="json") %}
+{% set resume_data = page.extra.resume_data | default(value="content/resume/data.json") %}
+{% set r = load_data(path=resume_data, format="json") %}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -239,6 +240,22 @@
       a { color: inherit; }
     }
   </style>
+  {% if page.extra.compact %}
+  <style>
+    /* Opt-in denser print layout for variants that need to fit two pages. */
+    @media print {
+      html { font-size: 13.5px; }
+      body { line-height: 1.45; }
+      .sheet { padding: 11mm 13mm; }
+      .resume-contact { margin-top: 0.65rem; padding-bottom: 0.8rem; }
+      section { margin-top: 0.9rem; }
+      section > h2 { margin-bottom: 0.6rem; }
+      .entry { margin-bottom: 0.7rem; }
+      .entry ul { margin-top: 0.35rem; }
+      .entry ul li { margin-bottom: 0.12rem; }
+    }
+  </style>
+  {% endif %}
 </head>
 <body>
 
